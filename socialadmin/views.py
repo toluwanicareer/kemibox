@@ -44,3 +44,9 @@ class Post_list(AjaxResponseMixin, ListView):
 	def get_queryset(self):
 		kemi_box=KemiBox.objects.get(id=1)
 		return Post.objects.filter(kemibox=kemi_box)
+
+
+class KemiBox(LoginRequiredMixin, View):
+
+	def get(self, request , *args , **kwargs):
+		
