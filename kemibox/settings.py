@@ -136,7 +136,11 @@ STATIC_URL = '/static/'
 
 LOGIN_URL = 'login'
 LOGOUT_URL = 'logout'
-LOGIN_REDIRECT_URL = 'login'
+LOGIN_REDIRECT_URL = ''
 
 SOCIAL_AUTH_TWITTER_KEY ='cPvBP72Mdig1yRCNLKrxCCe7V'
 SOCIAL_AUTH_TWITTER_SECRET='CiZYCmc5a1fcgOnipNqaFATblDqX9iUy7Ms4bLIb5P0HqWRJje'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+UPLOAD_TO = os.path.join(BASE_DIR, 'media/upload')

@@ -25,6 +25,9 @@ class AjaxResponseMixin:
 		return JsonResponse({'status':True, 'data':json_payload})
 
 		
+class HomeView(TemplateView):
+	template_name='index.html'
+
 
 class KemiBox_list( AjaxResponseMixin, ListView):
 	model=KemiBox
